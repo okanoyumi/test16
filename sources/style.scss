@@ -1,0 +1,10 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'slick';
+@import 'slick-theme';
+
+
+$base-grid: (
+    columns: 12,
+    gutter: 20px,
+);
