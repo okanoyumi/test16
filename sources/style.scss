@@ -9,9 +9,25 @@ $base-grid: (
 );
 
 // color
-$base: #d3d3d3;
+$base: #000000;
 
 body {
     background: $base;
-    
+
+    .nav-contents {
+        list-style: none;
+    }
+
+    .post-wrapper {
+        @include grid-container;
+
+        .post-container {
+            @include grid-column(4, $base-grid);
+
+            .post-img img {
+                max-width: 100%;
+                max-height: 100%;
+        }
+      }
+    }
 }

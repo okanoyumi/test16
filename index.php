@@ -9,8 +9,8 @@
 ?>
 
 <?php get_header(); ?>
-
 <?php /** Defautl post */ ?>
+<div class="post-wrapper">
 <?php
 if ( have_posts() ) :
 	while ( have_posts() ) :
@@ -19,7 +19,7 @@ if ( have_posts() ) :
 endwhile;
 endif;
 ?>
-
+</div>
 <?php /** Custom post */ ?>
 <article>
 <?php
@@ -45,10 +45,10 @@ endwhile;
 endif;
 ?>
 
-<?php /** Link to Page */ ?>
+<!-- <?php /** Link to Page */ ?>
 <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">
 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/img_about.jpg" width="30" height="auto">
-</a>
+</a> -->
 
 <?php
 get_footer();

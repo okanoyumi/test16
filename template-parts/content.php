@@ -8,7 +8,7 @@
 
 ?>
 
-<div>
+<div class="post-container">
 <?php
 if ( is_single() ) {
 	the_title( '<h1 class="entry-title">', '</h1>' );
@@ -17,10 +17,9 @@ if ( is_single() ) {
 }
 ?>
 <ul>
-	<li><?php echo get_the_data(); ?></li>
+	<li><?php echo get_the_date(); ?></li>
 	<li><?php the_category(); ?></li>
-	<li><?php the_tags(); ?></li>
-	<li><?php the_post_thumbnail(); ?></li>
+	<li class="post-img"><?php the_post_thumbnail(); ?></li>
 	<li><?php the_content(); ?></li>
 </ul>
 </div>

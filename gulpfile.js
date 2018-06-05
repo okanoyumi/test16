@@ -16,14 +16,14 @@ gulp.task('serve', function() {
     // server: "vccw.test"
   });
 
-  gulp.watch("sources/*.scss", ['sass']);
+  gulp.watch("sources/style.scss", ['sass']);
   gulp.watch("**/*.php", ['bs-reload']);
   gulp.watch('sources/*.js', ['browserify']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-  return gulp.src('sources/*.scss')
+  return gulp.src('sources/style.scss')
     .pipe(sass())
     .pipe(gulp.dest(""))
     .pipe(browserSync.stream());
