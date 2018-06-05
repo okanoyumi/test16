@@ -3,8 +3,15 @@
 @import 'slick';
 @import 'slick-theme';
 
-
 $base-grid: (
     columns: 12,
     gutter: 20px,
 );
+
+// color
+$base: #d3d3d3;
+
+body {
+    background: $base;
+    
+}
